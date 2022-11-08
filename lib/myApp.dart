@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:trueble/Controller/homeController.dart';
 import 'package:trueble/Pages/homePage.dart';
 import 'package:trueble/Pages/optionsPage.dart';
+import 'package:trueble/Pages/learnTablesMenu.dart';
 
 class MyApp extends StatelessWidget{
   const MyApp({super.key});
@@ -16,6 +17,8 @@ class MyApp extends StatelessWidget{
         routes: {
         "/": (context) => HomePage(),
         "/OptionsPage": (context) => OptionsPage(),
+          "/LearnTableMenu": (context) => LearnTableMenu(),
+
     });
   }
 }
