@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trueble/widgets/alertDialogMenu.dart';
 
 
 class fbfPage extends StatefulWidget {//gerencia o proprio estado
@@ -18,7 +19,7 @@ class _fbfPageState extends State<fbfPage> {
         title: Center(
           child: Row(
             children: [ Text('Fórmulas-Bem-Formadas'),
-              IconButton(onPressed: (){},
+              IconButton(onPressed: (){showAlertDialogMenu(context);},
                   icon: Icon(Icons.exit_to_app),
               ),
             ],

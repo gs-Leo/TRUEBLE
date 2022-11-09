@@ -4,6 +4,7 @@ import 'package:trueble/Pages/homePage.dart';
 import 'package:trueble/Pages/optionsPage.dart';
 import 'package:trueble/Pages/learnTablesMenu.dart';
 import 'package:trueble/Pages/fbfPage.dart';
+import 'package:trueble/widgets/alertDialogMenu.dart';
 
 class MyApp extends StatelessWidget{
   const MyApp({super.key});
@@ -20,6 +21,7 @@ class MyApp extends StatelessWidget{
         "/OptionsPage": (context) => OptionsPage(),
           "/LearnTableMenu": (context) => LearnTableMenu(),
           "/fbfPage": (context) => fbfPage(),
+
 
     });
   }
