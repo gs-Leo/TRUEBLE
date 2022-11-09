@@ -3,6 +3,7 @@ import 'package:trueble/Controller/homeController.dart';
 import 'package:trueble/Pages/homePage.dart';
 import 'package:trueble/Pages/optionsPage.dart';
 import 'package:trueble/Pages/learnTablesMenu.dart';
+import 'package:trueble/Pages/fbfPage.dart';
 
 class MyApp extends StatelessWidget{
   const MyApp({super.key});
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget{
         "/": (context) => HomePage(),
         "/OptionsPage": (context) => OptionsPage(),
           "/LearnTableMenu": (context) => LearnTableMenu(),
+          "/fbfPage": (context) => fbfPage(),
 
     });
   }

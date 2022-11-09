@@ -25,12 +25,13 @@ class _OptionsPageState extends State<OptionsPage> {
         children: <Widget>[
           Container(
             alignment: Alignment.topCenter,
-            child: Text('Menu Principal', style: TextStyle(
-            fontSize: 30,fontWeight: FontWeight.bold, color: Colors.blueGrey)),
-          ),
+          child: Text('Menu Principal', style: TextStyle(
+              fontSize: 30,fontWeight: FontWeight.bold, color: Colors.blueGrey)),
+        ),
+
           const SizedBox(height: 30),
           ElevatedButton(
-            //style: style,
+            //style: ButtonStyle(),
             onPressed: () {Navigator.pushNamed(context, '/LearnTableMenu');},
             child: const Text('Aprender Tabelas'),
           ),
