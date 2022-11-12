@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
 
-class OptionsPage extends StatefulWidget {//gerencia o proprio estado
-  const OptionsPage({Key? key}) : super(key: key);
+class Menu extends StatefulWidget {//gerencia o proprio estado
+  const Menu({Key? key}) : super(key: key);
 
   @override
-  _OptionsPageState createState() => _OptionsPageState();
+  _MenuState createState() => _MenuState();
 }
 
-class _OptionsPageState extends State<OptionsPage> {
+class _MenuState extends State<Menu> {
 
   @override
   Widget build(BuildContext context) {
