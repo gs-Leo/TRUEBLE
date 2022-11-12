@@ -25,7 +25,7 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Image.asset("assets/imagens/logo.png"),
+            Image.asset("assets/images/logo.png"),
             /*Text('Toque para Iniciar',
               style: TextStyle(
                 fontSize: 25 ),

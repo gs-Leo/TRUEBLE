@@ -31,6 +31,9 @@ class _OptionsPageState extends State<OptionsPage> {
 
           const SizedBox(height: 30),
           ElevatedButton(
+            style: ElevatedButton.styleFrom(
+
+              backgroundColor: Colors.deepOrange,),
             //style: ButtonStyle(),
             onPressed: () {Navigator.pushNamed(context, '/LearnTableMenu');},
             child: const Text('Aprender Tabelas'),
