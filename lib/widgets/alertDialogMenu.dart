@@ -1,21 +1,26 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
-
 
 showAlertDialogMenu(BuildContext context) {
   Widget cancelaButton = TextButton(
     child: Text("Cancelar"),
-    onPressed:  () {},
+    onPressed: () {},
   );
   Widget continuaButton = TextButton(
     child: Text("Confirmar"),
-    onPressed:  () {Navigator.pushNamed(context, '/OptionsPage');},
+    onPressed: () {
+      Navigator.pushNamed(context, '/Menu');
+    },
   );
   //configura o AlertDialog
   AlertDialog alert = AlertDialog(
-    title: Center( child: Icon(Icons.info_outline, size: 40,),),
-    content: Text("Você está saindo do aplicativo. Deseja retornar ao Menu Principal?"),
+    title: Center(
+      child: Icon(
+        Icons.info_outline,
+        size: 40,
+      ),
+    ),
+    content: Text(
+        "Você está saindo do aplicativo. Deseja retornar ao Menu Principal?"),
     actions: [
       cancelaButton,
       continuaButton,

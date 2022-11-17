@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-
-class LearnTableMenu extends StatefulWidget {//gerencia o proprio estado
+class LearnTableMenu extends StatefulWidget {
+  //gerencia o proprio estado
   const LearnTableMenu({Key? key}) : super(key: key);
 
   @override
@@ -9,7 +9,6 @@ class LearnTableMenu extends StatefulWidget {//gerencia o proprio estado
 }
 
 class _LearnTableMenuState extends State<LearnTableMenu> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,7 +16,6 @@ class _LearnTableMenuState extends State<LearnTableMenu> {
         title: Text(''),
         backgroundColor: Colors.blueGrey,
       ),
-
       body: Center(
         child: Column(
           mainAxisSize: MainAxisSize.max,
@@ -25,43 +23,48 @@ class _LearnTableMenuState extends State<LearnTableMenu> {
           children: <Widget>[
             Container(
               alignment: Alignment.topCenter,
-              child: Text('Aprender Tabelas', style: TextStyle(
-                  fontSize: 30,fontWeight: FontWeight.bold, color: Colors.blueGrey)),
+              child: Text('Aprender Tabelas',
+                  style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.blueGrey)),
             ),
             const SizedBox(height: 30),
             ElevatedButton(
               //style: style,
-              onPressed: () {Navigator.pushNamed(context, '/fbfPage'); },
+              onPressed: () {
+                Navigator.pushNamed(context, '/fbfPage');
+              },
               child: const Text('Fórmula-Bem-Formada'),
             ),
             const SizedBox(height: 30),
             ElevatedButton(
               //style: style,
-                onPressed: () { },
+              onPressed: () {},
               child: const Text('Ordem de Precedência'),
             ),
             const SizedBox(height: 30),
             ElevatedButton(
               //style: style,
-              onPressed: () { },
+              onPressed: () {},
               child: const Text('Semântica'),
             ),
             const SizedBox(height: 30),
             ElevatedButton(
               //style: style,
-              onPressed: () { },
+              onPressed: () {},
               child: const Text('Classificação e Satisfazibilidade'),
             ),
             const SizedBox(height: 30),
             ElevatedButton(
               //style: style,
-              onPressed: () { },
+              onPressed: () {},
               child: const Text('Validação de Argumentos'),
             ),
             const SizedBox(height: 30),
             ElevatedButton(
               //style: style,
-              onPressed: () { },
+              onPressed: () {},
               child: const Text('Consequência e Equivalência'),
             ),
           ],
