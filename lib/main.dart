@@ -3,6 +3,7 @@ import 'package:trueble/pages/home.dart';
 import 'package:trueble/pages/menu.dart';
 import 'package:trueble/pages/learnTablesMenu.dart';
 import 'package:trueble/pages/fbfPage.dart';
+import 'package:trueble/pages/ordemPrecedencia.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,6 +15,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Aqui é onde retorna os widget ( olhar os catalogos depois )
+    final ButtonStyle ElevatedButtonTheme = ElevatedButton.styleFrom(
+      onPrimary: Colors.black87,
+      primary: Colors.grey[300],
+      minimumSize: Size(88, 36),
+      padding: EdgeInsets.symmetric(horizontal: 16),
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.all(Radius.circular(2)),
+      ),
+    );
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         initialRoute: "/",
@@ -22,6 +32,7 @@ class MyApp extends StatelessWidget {
           "/Menu": (context) => Menu(),
           "/LearnTableMenu": (context) => LearnTableMenu(),
           "/fbfPage": (context) => fbfPage(),
+          "/ordemPrecedencia": (context) => ordemPrecedencia(),
         });
   }
 }

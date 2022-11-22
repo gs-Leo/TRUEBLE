@@ -4,6 +4,8 @@ class Menu extends StatefulWidget {
   //gerencia o proprio estado
   const Menu({Key? key}) : super(key: key);
 
+
+
   @override
   _MenuState createState() => _MenuState();
 }
@@ -11,6 +13,7 @@ class Menu extends StatefulWidget {
 class _MenuState extends State<Menu> {
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       appBar: AppBar(
         title: Text(''),
