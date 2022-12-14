@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:trueble/widgets/ButtonTheme.dart';
+
 
 class Menu extends StatefulWidget {
   //gerencia o proprio estado
   const Menu({Key? key}) : super(key: key);
-
-
 
   @override
   _MenuState createState() => _MenuState();
@@ -13,7 +13,6 @@ class Menu extends StatefulWidget {
 class _MenuState extends State<Menu> {
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       appBar: AppBar(
         title: Text(''),
@@ -27,17 +26,11 @@ class _MenuState extends State<Menu> {
             Container(
               alignment: Alignment.topCenter,
               child: Text('Menu Principal',
-                  style: TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.blueGrey)),
+                  style: Theme.of(context).textTheme.headline1),
             ),
             const SizedBox(height: 30),
             ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.blueGrey,
-              ),
-              //style: ButtonStyle(),
+              style: button(context),
               onPressed: () {
                 Navigator.pushNamed(context, '/LearnTableMenu');
               },
@@ -45,13 +38,13 @@ class _MenuState extends State<Menu> {
             ),
             const SizedBox(height: 30),
             ElevatedButton(
-              //style: style,
+              style: button(context),
               onPressed: null,
               child: const Text('Construir Tabelas'),
             ),
             const SizedBox(height: 30),
             ElevatedButton(
-              //style: style,
+              style: button(context),
               onPressed: null,
               child: const Text('Verificar Tabelas'),
             ),

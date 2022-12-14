@@ -15,17 +15,27 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Aqui é onde retorna os widget ( olhar os catalogos depois )
-    final ButtonStyle ElevatedButtonTheme = ElevatedButton.styleFrom(
-      onPrimary: Colors.black87,
-      primary: Colors.grey[300],
-      minimumSize: Size(88, 36),
-      padding: EdgeInsets.symmetric(horizontal: 16),
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.all(Radius.circular(2)),
-      ),
-    );
     return MaterialApp(
+        title: 'TRUEBLE',
+        theme: ThemeData(
+          fontFamily: 'Montserrat',
+          textTheme: const TextTheme(
+            headline1: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+                color: Colors.blueGrey),
+
+            headline2: TextStyle(
+                fontSize: 25,
+                fontWeight: FontWeight.bold,
+                color: Colors.black),
+
+            bodyText1: TextStyle(fontSize: 20,)
+          ),
+
+        ),
         debugShowCheckedModeBanner: false,
+        //ROTAS
         initialRoute: "/",
         routes: {
           "/": (context) => HomePage(),

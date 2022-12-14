@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:trueble/widgets/widgetsTheme.dart';
+import 'package:trueble/widgets/ButtonTheme.dart';
 
 class LearnTableMenu extends StatefulWidget {
   //gerencia o proprio estado
@@ -25,7 +25,7 @@ class _LearnTableMenuState extends State<LearnTableMenu> {
             Container(
               alignment: Alignment.topCenter,
               child: Text('Aprender Tabelas',
-                  style: tittle(context)),
+              style: Theme.of(context).textTheme.headline1),
             ),
             const SizedBox(height: 30),
             ElevatedButton(
@@ -38,31 +38,31 @@ class _LearnTableMenuState extends State<LearnTableMenu> {
             const SizedBox(height: 30),
             ElevatedButton(
               style: button(context),
-              onPressed: () {},
+              onPressed: () {Navigator.pushNamed(context, '/ordemPrecedencia');},
               child: const Text('Ordem de Precedência'),
             ),
             const SizedBox(height: 30),
             ElevatedButton(
               style: button(context),
-              onPressed: () {},
+              onPressed: null,
               child: const Text('Semântica'),
             ),
             const SizedBox(height: 30),
             ElevatedButton(
               style: button(context),
-              onPressed: () {},
+              onPressed: null,
               child: const Text('Classificação e Satisfazibilidade'),
             ),
             const SizedBox(height: 30),
             ElevatedButton(
               style: button(context),
-              onPressed: () {},
+              onPressed: null,
               child: const Text('Validação de Argumentos'),
             ),
             const SizedBox(height: 30),
             ElevatedButton(
               style: button(context),
-              onPressed: () {},
+              onPressed: null,
               child: const Text('Consequência e Equivalência'),
             ),
           ],

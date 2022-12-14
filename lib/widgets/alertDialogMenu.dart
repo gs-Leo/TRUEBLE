@@ -44,7 +44,7 @@ alertFbf(BuildContext context) {
   Widget continuaButton = TextButton(
     child: Text("Prosseguir"),
     onPressed: () {
-      Navigator.pushNamedAndRemoveUntil(context, '/ordemPrecedencia', ModalRoute.withName('/ordemPrecedencia'),);
+      Navigator.pushNamed(context, '/ordemPrecedencia');
     },
   );
   //configura o AlertDialog
@@ -71,3 +71,6 @@ alertFbf(BuildContext context) {
     },
   );
 }
+
+
+
