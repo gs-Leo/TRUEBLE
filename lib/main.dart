@@ -4,6 +4,7 @@ import 'package:trueble/pages/menu.dart';
 import 'package:trueble/pages/learnTablesMenu.dart';
 import 'package:trueble/pages/fbfPage.dart';
 import 'package:trueble/pages/ordemPrecedencia.dart';
+import 'package:trueble/pages/semantica.dart';
 
 void main() {
   runApp(MyApp());
@@ -43,6 +44,8 @@ class MyApp extends StatelessWidget {
           "/LearnTableMenu": (context) => LearnTableMenu(),
           "/fbfPage": (context) => fbfPage(),
           "/ordemPrecedencia": (context) => ordemPrecedencia(),
+          "/semantica": (context) => semantica(),
+
         });
   }
 }

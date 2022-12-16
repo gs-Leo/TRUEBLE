@@ -18,8 +18,9 @@ class _fbfPageState extends State<fbfPage> {
         backgroundColor: Colors.blueGrey,
         title: Center(
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text('Fórmulas Bem Formadas'),
+              Text('Fórmulas \nBem Formadas',textAlign: TextAlign.left,),
               IconButton(
                 onPressed: () {
                   showAlertDialogMenu(context);

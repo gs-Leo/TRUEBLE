@@ -44,7 +44,7 @@ class _LearnTableMenuState extends State<LearnTableMenu> {
             const SizedBox(height: 30),
             ElevatedButton(
               style: button(context),
-              onPressed: null,
+              onPressed: () {Navigator.pushNamed(context, '/semantica');},
               child: const Text('Semântica'),
             ),
             const SizedBox(height: 30),

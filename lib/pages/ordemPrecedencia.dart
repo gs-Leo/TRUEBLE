@@ -18,6 +18,7 @@ class _ordemPrecedenciaState extends State<ordemPrecedencia> {
         backgroundColor: Colors.blueGrey,
         title: Center(
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               const Text('Ordem de Precedência'),
               IconButton(
@@ -1074,6 +1075,7 @@ class _ordemPrecedenciaState extends State<ordemPrecedencia> {
                           'Quais fórmulas indicam corretamente a fórmula'
                           'equivalente? Leve em conta a ordem de precedência'
                           'dos operadores',
+                          textAlign: TextAlign.justify,
                         ),
                       ],
                     ),
@@ -1082,7 +1084,7 @@ class _ordemPrecedenciaState extends State<ordemPrecedencia> {
                   ElevatedButton(
                     style: button(context),
                     onPressed: () {
-                      null;
+                      alertOrdemPrecedencia(context);
                     },
                     child: const Text('Finalizar tópico'),
                   ),
