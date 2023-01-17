@@ -136,8 +136,98 @@ class _semanticaState extends State<semantica> {
                   //
 
                   //
-                  //Aqui vai uma tabela
+                  //Aqui vai 1ª tabela
                   //
+              const SizedBox(height: 20),
+              Table(
+                border: TableBorder.all(),
+                columnWidths: {
+                  0: const FlexColumnWidth(10),
+                  1: const FlexColumnWidth(10),
+                },
+                defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+                children: <TableRow>[
+                  TableRow(
+                    children: <Widget>[
+                      Container(
+                        height: 25,
+                        color: Colors.blueGrey,
+                        alignment: Alignment.center,
+                        child: const Text(
+                          'P', //formatar para Texto Grego
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                      TableCell(
+                        verticalAlignment: TableCellVerticalAlignment.top,
+                        child: Container(
+                          height: 25,
+                          color: Colors.blueGrey,
+                          alignment: Alignment.center,
+                          child: const Text(
+                            '~P',
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                      ),
+
+                    ],
+                  ),
+                  TableRow(
+                    children: <Widget>[
+                      TableCell(
+                          child: Container(
+                            height: 20,
+                            color: Colors.white,
+                            alignment: Alignment.center,
+                            child: const Text("V"),
+                          ),
+                      ),
+                        TableCell(
+                          child: Container(
+                          height: 20,
+                          color: Colors.white,
+                            alignment: Alignment.center,
+                            child: const Text('F'),
+                          ),
+                            
+                        ),
+
+                    ],
+                  ),
+                  TableRow(
+                    children: <Widget>[
+                      TableCell(
+                        child: Container(
+                          height: 20,
+                          color: Colors.white,
+                          alignment: Alignment.center,
+                          child: const Text("F"),
+                        ),
+                      ),
+                      TableCell(
+                        child: Container(
+                          height: 20,
+                          color: Colors.white,
+                          alignment: Alignment.center,
+                          child: const Text('V',
+                              ),
+                        ),
+
+                      ),
+
+
+
+                    ],
+                  ),
+                ],),
+                  //
+
+                  //Fim da Tabela
 
                   //Inicio do terceiro container
                   const SizedBox(height: 20),
@@ -181,7 +271,164 @@ class _semanticaState extends State<semantica> {
 
 
                   //
-                  //Aqui vai uma tabela
+                  //Inicio da 2º Tabela
+                  //
+                  const SizedBox(height: 20),
+                  Table(
+                    border: TableBorder.all(),
+                    columnWidths: {
+                      0: const FlexColumnWidth(10),
+                      1: const FlexColumnWidth(10),
+                      2: const FlexColumnWidth(10),
+                    },
+                    defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+                    children: <TableRow>[
+                      TableRow(
+                        children: <Widget>[
+                          TableCell(
+                            child: Container(
+                              height: 25,
+                              color: Colors.blueGrey,
+                              alignment: Alignment.center,
+                              child: const Text(
+                                'P',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 25,
+                              color: Colors.blueGrey,
+                              alignment: Alignment.center,
+                              child: const Text(
+                                'Q',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 25,
+                              color: Colors.blueGrey,
+                              alignment: Alignment.center,
+                              child: const Text(
+                                'P^Q',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      TableRow(
+                        children: <Widget>[
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('V'),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('V'),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('V'),
+                            ),
+                          ),
+                        ],
+                      ),
+                      TableRow(
+                        children: <Widget>[
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('V'),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('F'),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('F'),
+                            ),
+                          ),
+                        ],
+                      ),
+                      TableRow(
+                        children: <Widget>[
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('F'),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('V'),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('F'),
+                            ),
+                          ),
+                        ],
+                      ),
+                      TableRow(
+                        children: <Widget>[
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('F'),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('F'),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 32,
+                              alignment: Alignment.center,
+                              child: const Text('F'),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                  //Fim da Tabela
                   //
 
                   //Inicio do 4 container
@@ -226,8 +473,165 @@ class _semanticaState extends State<semantica> {
                   //
 
                   //
-                  //Aqui vai uma tabela
+                  //Aqui vai 3º tabela
                   //
+                  const SizedBox(height: 20),
+                  Table(
+                    border: TableBorder.all(),
+                    columnWidths: {
+                      0: const FlexColumnWidth(10),
+                      1: const FlexColumnWidth(10),
+                      2: const FlexColumnWidth(10),
+                    },
+                    defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+                    children: <TableRow>[
+                      TableRow(
+                        children: <Widget>[
+                          TableCell(
+                            child: Container(
+                              height: 25,
+                              color: Colors.redAccent,
+                              alignment: Alignment.center,
+                              child: const Text(
+                                'P',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 25,
+                              color: Colors.redAccent,
+                              alignment: Alignment.center,
+                              child: const Text(
+                                'Q',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 25,
+                              color: Colors.redAccent,
+                              alignment: Alignment.center,
+                              child: const Text(
+                                'P v Q',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      TableRow(
+                        children: <Widget>[
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('V'),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('V'),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('V'),
+                            ),
+                          ),
+                        ],
+                      ),
+                      TableRow(
+                        children: <Widget>[
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('V'),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('F'),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('V'),
+                            ),
+                          ),
+                        ],
+                      ),
+                      TableRow(
+                        children: <Widget>[
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('F'),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('V'),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('V'),
+                            ),
+                          ),
+                        ],
+                      ),
+                      TableRow(
+                        children: <Widget>[
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('F'),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('F'),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 32,
+                              alignment: Alignment.center,
+                              child: const Text('F'),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+
+                  //Fim da Tabela
 
                   //
                   //Inicio do quinto Container
@@ -272,9 +676,165 @@ class _semanticaState extends State<semantica> {
                   //
 
                   //
-                  //Aqui vai uma tabela
+                  //Aqui vai 4ª tabela
                   //
-//
+                  const SizedBox(height: 20),
+                  Table(
+                    border: TableBorder.all(),
+                    columnWidths: {
+                      0: const FlexColumnWidth(10),
+                      1: const FlexColumnWidth(10),
+                      2: const FlexColumnWidth(10),
+                    },
+                    defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+                    children: <TableRow>[
+                      TableRow(
+                        children: <Widget>[
+                          TableCell(
+                            child: Container(
+                              height: 25,
+                              color: Colors.blueGrey,
+                              alignment: Alignment.center,
+                              child: const Text(
+                                'P',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 25,
+                              color: Colors.blueGrey,
+                              alignment: Alignment.center,
+                              child: const Text(
+                                'Q',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 25,
+                              color: Colors.blueGrey,
+                              alignment: Alignment.center,
+                              child: const Text(
+                                'P → Q',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      TableRow(
+                        children: <Widget>[
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('V'),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('V'),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('V'),
+                            ),
+                          ),
+                        ],
+                      ),
+                      TableRow(
+                        children: <Widget>[
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('V'),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('F'),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('F'),
+                            ),
+                          ),
+                        ],
+                      ),
+                      TableRow(
+                        children: <Widget>[
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('F'),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('V'),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('V'),
+                            ),
+                          ),
+                        ],
+                      ),
+                      TableRow(
+                        children: <Widget>[
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('F'),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('F'),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 32,
+                              alignment: Alignment.center,
+                              child: const Text('V'),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                  // Fim da Tabela
+
                   //Inicio do sexto Container
                   //
                   const SizedBox(height: 20),
@@ -317,8 +877,164 @@ class _semanticaState extends State<semantica> {
                   //
 
                   //
-                  //Aqui vai uma tabela
+                  //Aqui vai 5º  tabela
                   //
+                  const SizedBox(height: 20),
+                  Table(
+                    border: TableBorder.all(),
+                    columnWidths: {
+                      0: const FlexColumnWidth(10),
+                      1: const FlexColumnWidth(10),
+                      2: const FlexColumnWidth(10),
+                    },
+                    defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+                    children: <TableRow>[
+                      TableRow(
+                        children: <Widget>[
+                          TableCell(
+                            child: Container(
+                              height: 25,
+                              color: Colors.blueGrey,
+                              alignment: Alignment.center,
+                              child: const Text(
+                                'P',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 25,
+                              color: Colors.blueGrey,
+                              alignment: Alignment.center,
+                              child: const Text(
+                                'Q',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 25,
+                              color: Colors.blueGrey,
+                              alignment: Alignment.center,
+                              child: const Text(
+                                'P ↔ Q',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      TableRow(
+                        children: <Widget>[
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('V'),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('V'),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('V'),
+                            ),
+                          ),
+                        ],
+                      ),
+                      TableRow(
+                        children: <Widget>[
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('V'),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('F'),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('F'),
+                            ),
+                          ),
+                        ],
+                      ),
+                      TableRow(
+                        children: <Widget>[
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('F'),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('V'),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('F'),
+                            ),
+                          ),
+                        ],
+                      ),
+                      TableRow(
+                        children: <Widget>[
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('F'),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 20,
+                              alignment: Alignment.center,
+                              child: const Text('F'),
+                            ),
+                          ),
+                          TableCell(
+                            child: Container(
+                              height: 32,
+                              alignment: Alignment.center,
+                              child: const Text('V'),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                  //Fim Tabela
 
                   //Inicio do Container Faça voce mesmo
                   //

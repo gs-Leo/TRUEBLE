@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trueble/pages/classifiesatis.dart';
 import 'package:trueble/pages/home.dart';
 import 'package:trueble/pages/menu.dart';
 import 'package:trueble/pages/learnTablesMenu.dart';
@@ -45,6 +46,7 @@ class MyApp extends StatelessWidget {
           "/fbfPage": (context) => fbfPage(),
           "/ordemPrecedencia": (context) => ordemPrecedencia(),
           "/semantica": (context) => semantica(),
+          "/classificacaoesatisfazbilidade": (context) => classifiesatis(),
 
         });
   }

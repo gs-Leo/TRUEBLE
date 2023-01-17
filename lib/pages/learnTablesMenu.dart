@@ -50,7 +50,7 @@ class _LearnTableMenuState extends State<LearnTableMenu> {
             const SizedBox(height: 30),
             ElevatedButton(
               style: button(context),
-              onPressed: null,
+              onPressed: () {Navigator.pushNamed(context, '/classificacaoesatisfazbilidade');},
               child: const Text('Classificação e Satisfazibilidade'),
             ),
             const SizedBox(height: 30),

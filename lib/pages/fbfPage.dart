@@ -74,7 +74,8 @@ class _fbfPageState extends State<fbfPage> {
                               'Em alguns casos, precisamos fazer uso de parênteses ( ). \n'),
                           Text('Exemplo: (p -> q) v r'),
                         ],
-                      )),
+                      )
+                  ),
                   SizedBox(height: 20),
                   Table(
                     border: TableBorder.all(),
